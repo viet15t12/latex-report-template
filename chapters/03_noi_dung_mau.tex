@@ -1,0 +1,48 @@
+\chapter{Ví dụ minh hoạ trình bày nội dung}
+\label{ch:noi_dung_mau}
+
+% Đây là chương MẪU minh hoạ cách chèn hình, bảng, code, công thức, trích dẫn.
+% Khi viết chương thật (chương 2, 3, 4... tuỳ đề tài) hãy copy các ví dụ này
+% và xoá phần không cần.
+
+\section{Chèn hình ảnh}
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.7\linewidth]{images/vi_du.png}
+    \todo{Chèn ảnh vào đây, ví dụ: \texttt{images/vi\_du.png}}
+    \caption{Ví dụ chú thích hình}
+    \label{fig:vi_du}
+\end{figure}
+
+Tham chiếu tới hình bằng lệnh \texttt{\textbackslash ref\{fig:vi\_du\}}, ví dụ: xem Hình~\ref{fig:vi_du}.
+
+\section{Chèn bảng}
+\begin{table}[H]
+\centering
+\caption{Ví dụ bảng số liệu}
+\label{tab:vi_du}
+\begin{tabular}{lll}
+\toprule
+\textbf{Cột 1} & \textbf{Cột 2} & \textbf{Cột 3} \\
+\midrule
+Dữ liệu A & Dữ liệu B & Dữ liệu C \\
+Dữ liệu D & Dữ liệu E & Dữ liệu F \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Chèn đoạn code}
+\begin{lstlisting}[language=Python, caption={Ví dụ đoạn code minh hoạ}]
+def hello():
+    print("Xin chao bao cao!")
+\end{lstlisting}
+
+\section{Công thức toán}
+Ví dụ một công thức đơn giản:
+\begin{equation}
+    E = mc^2
+    \label{eq:vi_du}
+\end{equation}
+
+\section{Trích dẫn tài liệu tham khảo}
+Đây là ví dụ trích dẫn tài liệu tham khảo \cite{example2024}.

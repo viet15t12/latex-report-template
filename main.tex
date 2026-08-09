@@ -1,0 +1,47 @@
+\documentclass[12pt,a4paper]{report}
+
+% ================= CONFIG =================
+\input{config/packages}
+\input{config/settings}
+\input{config/commands}
+\input{config/listings}
+\input{config/images}
+\input{config/info}
+
+\begin{document}
+
+% ---------- Trang bìa & thông tin ----------
+\input{chapters/00_bia}
+
+% ---------- Lời cam đoan / cảm ơn ----------
+\input{chapters/00_loi_cam_doan}
+\input{chapters/00_loi_cam_on}
+
+% ---------- Tóm tắt ----------
+\input{chapters/00_tom_tat}
+
+% ---------- Danh mục từ viết tắt ----------
+\input{chapters/00_danh_muc_tu_viet_tat}
+
+% ---------- Mục lục, danh mục hình/bảng ----------
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+
+% ================= NỘI DUNG CHÍNH =================
+% Đây là 2 chương MẪU (chương 1: mở đầu, chương 3: minh hoạ nội dung).
+% Đồ án / tiểu luận / NCKH có số chương khác nhau -> copy 1 trong 2 file này
+% làm khuôn, đổi tên "0N_ten_chuong.tex" rồi \input thêm vào đây theo đúng thứ tự.
+\input{chapters/01_mo_dau}
+\input{chapters/03_noi_dung_mau}
+
+% ================= TÀI LIỆU THAM KHẢO =================
+\bibliographystyle{ieeetr}
+\bibliography{references}
+
+% ================= PHỤ LỤC =================
+\appendix
+\input{appendix/appendix_a_vi_du}
+
+\end{document}
